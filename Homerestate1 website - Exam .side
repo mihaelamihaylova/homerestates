@@ -1,0 +1,690 @@
+{
+  "id": "affe0aa0-b29a-420d-9ee0-a1f63649e098",
+  "version": "2.0",
+  "name": "Homerestate1 website - Exam ",
+  "url": "https://homerestate1.herokuapp.com/",
+  "tests": [{
+    "id": "3c8739e1-c631-4f93-a062-7c45574cecc9",
+    "name": "Verify the system as a GUEST user",
+    "commands": [{
+      "id": "b99faf90-6529-427c-a690-ab81ee8083c9",
+      "comment": "",
+      "command": "open",
+      "target": "https://homerestate1.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "60784038-b01a-4944-9290-607e2ad1964c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "90ed121f-2a4a-402e-b377-b318af2c3824",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.logo__holder > img",
+      "targets": [
+        ["css=.logo__holder > img", "css:finder"],
+        ["xpath=//nav[@id='ts-primary-navigation']/div/a/span/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b276d9f-f832-432b-aae4-9b4f31a390f6",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.py-2",
+      "targets": [
+        ["css=.py-2", "css:finder"],
+        ["xpath=//section[@id='ts-hero']/div/div", "xpath:idRelative"],
+        ["xpath=//section/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3623a56-1513-438d-a83a-9d18a757f945",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.col-sm-6:nth-child(1) .card-img-top",
+      "targets": [
+        ["css=.col-sm-6:nth-child(1) .card-img-top", "css:finder"],
+        ["xpath=//img[contains(@src,'http://res.cloudinary.com/dvd4zldid/image/upload/v1649682589/xjvd29ecpsbnamejlagq.png')]", "xpath:img"],
+        ["xpath=//div[@id='offerList#1']/div/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "744073f6-2028-46ae-b357-5e1d6d636865",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "bd2464da-4a03-446c-861c-866f8896b5ea",
+    "name": "Verify Home page components ",
+    "commands": [{
+      "id": "d0c7fdb0-5e04-4d3c-9f58-0d8e4df5c9f8",
+      "comment": "",
+      "command": "open",
+      "target": "https://homerestate1.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4d6f865-cf70-49f7-aaf5-1313291c70b6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1041x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6899a728-595e-479c-9515-f4d73ee2a2a3",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#navbarPrimary > .navbar-nav",
+      "targets": [
+        ["css=#navbarPrimary > .navbar-nav", "css:finder"],
+        ["xpath=//div[@id='navbarPrimary']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "About us\\nContacts\\nLogin\\nRegister"
+    }, {
+      "id": "af67b2a2-ea45-4ffb-bf3e-e41c703c68ba",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Homer Estates",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15fcdbeb-a692-40e5-b755-89cd5914b504",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.col-sm-6:nth-child(2) h4",
+      "targets": [
+        ["css=.col-sm-6:nth-child(2) h4", "css:finder"],
+        ["xpath=//div[@id='offerList#1']/div[2]/a/div/figure/h4", "xpath:idRelative"],
+        ["xpath=//div[2]/a/div/figure/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Three-bedroom apartment for rent')]", "xpath:innerText"]
+      ],
+      "value": "Three-bedroom apartment for rent"
+    }, {
+      "id": "f7ec3596-8016-44d6-ba64-32549791dbc1",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[@value='350000.00']",
+      "targets": [
+        ["css=.col-sm-6:nth-child(8) .ts-item__info-badge", "css:finder"],
+        ["xpath=//div[@value='350000.00']", "xpath:attributes"],
+        ["xpath=//div[@id='offerList#1']/div[8]/a/div/div", "xpath:idRelative"],
+        ["xpath=//div[8]/a/div/div", "xpath:position"]
+      ],
+      "value": "€ 350000.00"
+    }, {
+      "id": "a9b03571-0686-4cf2-bdfc-f9b67244ce48",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e154c8d6-cf28-4922-83ec-1a1fcd136b6c",
+    "name": "Verify the first part of the \"Offers Detail\" page - picture, address, price",
+    "commands": [{
+      "id": "f15f92f6-894e-4101-bb73-affc8e1507f5",
+      "comment": "",
+      "command": "open",
+      "target": "https://homerestate1.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bfc52799-3a1d-4fb4-a175-700ae0644bd9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1021x809",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "33dbe83f-8d1b-4060-81ab-afd4952f0ca2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//div[@id='navbarPrimary']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/users/login')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "21776efa-7f72-4786-807e-dd0baed263b0",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputUsername",
+      "targets": [
+        ["id=inputUsername", "id"],
+        ["name=username", "name"],
+        ["css=#inputUsername", "css:finder"],
+        ["xpath=//input[@id='inputUsername']", "xpath:attributes"],
+        ["xpath=//section[@id='basic-information']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e63fd168-6e81-4cc8-9283-5a196aafbefa",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputUsername",
+      "targets": [
+        ["id=inputUsername", "id"],
+        ["name=username", "name"],
+        ["css=#inputUsername", "css:finder"],
+        ["xpath=//input[@id='inputUsername']", "xpath:attributes"],
+        ["xpath=//section[@id='basic-information']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "mihaelamihaylova"
+    }, {
+      "id": "d589b591-21c6-4424-aed2-31e49da88428",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputPassword",
+      "targets": [
+        ["id=inputPassword", "id"],
+        ["name=password", "name"],
+        ["css=#inputPassword", "css:finder"],
+        ["xpath=//input[@id='inputPassword']", "xpath:attributes"],
+        ["xpath=//section[@id='basic-information']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c20b7084-f7bc-47b6-af47-a3cd71126fd5",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputPassword",
+      "targets": [
+        ["id=inputPassword", "id"],
+        ["name=password", "name"],
+        ["css=#inputPassword", "css:finder"],
+        ["xpath=//input[@id='inputPassword']", "xpath:attributes"],
+        ["xpath=//section[@id='basic-information']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Mihaela12346"
+    }, {
+      "id": "1ae736bb-1ca3-4984-95fb-931072415579",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='entrustmentEnquiry']/section[2]/div/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "922648a3-1231-45a5-b4e7-d25db950f4ac",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.col-sm-6:nth-child(2) .card-img-top",
+      "targets": [
+        ["css=.col-sm-6:nth-child(2) .card-img-top", "css:finder"],
+        ["xpath=//img[contains(@src,'http://res.cloudinary.com/dvd4zldid/image/upload/v1649929237/vmiixwwaw54kjp8kyjjd.jpg')]", "xpath:img"],
+        ["xpath=//div[@id='offerList#1']/div[2]/a/img", "xpath:idRelative"],
+        ["xpath=//div[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9090ccd-38bf-4a63-b826-9477e447aa01",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-6:nth-child(2) .card-img-top",
+      "targets": [
+        ["css=.col-sm-6:nth-child(2) .card-img-top", "css:finder"],
+        ["xpath=//img[contains(@src,'http://res.cloudinary.com/dvd4zldid/image/upload/v1649929237/vmiixwwaw54kjp8kyjjd.jpg')]", "xpath:img"],
+        ["xpath=//div[@id='offerList#1']/div[2]/a/img", "xpath:idRelative"],
+        ["xpath=//div[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c7b793a-5792-4258-a7f0-83ab85caadb5",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.carousell__image",
+      "targets": [
+        ["css=.carousell__image", "css:finder"],
+        ["xpath=//img[contains(@src,'http://res.cloudinary.com/dvd4zldid/image/upload/v1649929237/vmiixwwaw54kjp8kyjjd.jpg')]", "xpath:img"],
+        ["xpath=//section[@id='gallery-carousel']/div/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1bf8028-a9a3-4dce-99a7-d039c3f250c6",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.badge",
+      "targets": [
+        ["css=.badge", "css:finder"],
+        ["xpath=//section[@id='page-title']/div/div/div[2]/h3/span", "xpath:idRelative"],
+        ["xpath=//h3/span", "xpath:position"],
+        ["xpath=//span[contains(.,'€ 1000.00')]", "xpath:innerText"]
+      ],
+      "value": "€ 1000.00"
+    }, {
+      "id": "5bb7a8e2-47d5-4b05-b73f-9cfd9348e2c9",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h5 > span",
+      "targets": [
+        ["css=h5 > span", "css:finder"],
+        ["xpath=//section[@id='page-title']/div/div/div/h5/span", "xpath:idRelative"],
+        ["xpath=//h5/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sofia, Sofia, Aleksander Stamboliiski blvd.')]", "xpath:innerText"]
+      ],
+      "value": "Sofia, Sofia, Aleksander Stamboliiski blvd."
+    }, {
+      "id": "67d48bde-2766-40b4-9af0-0c7aa0b94006",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form/button",
+      "targets": [
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarPrimary']/ul/li[9]/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "17ff90ff-b059-4061-97fe-109f01b3393d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3bb7fdb0-516a-470b-a695-3f301929886a",
+    "name": "Verify error messages on Login page with: Non-existent user",
+    "commands": [{
+      "id": "0424f480-8841-488e-bd56-9e39f118d555",
+      "comment": "",
+      "command": "open",
+      "target": "https://homerestate1.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "010d0a96-b289-4246-b072-582a42b0074c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1075x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f2b86794-abbf-4e97-87fa-0c439eedd1c8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//div[@id='navbarPrimary']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/users/login')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2117ddad-89ff-4038-990c-39e1e3033b7c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=inputUsername",
+      "targets": [
+        ["id=inputUsername", "id"],
+        ["name=username", "name"],
+        ["css=#inputUsername", "css:finder"],
+        ["xpath=//input[@id='inputUsername']", "xpath:attributes"],
+        ["xpath=//section[@id='basic-information']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "80dbc32f-772c-4b3b-81e1-3725f2a3c0af",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputUsername",
+      "targets": [
+        ["id=inputUsername", "id"],
+        ["name=username", "name"],
+        ["css=#inputUsername", "css:finder"],
+        ["xpath=//input[@id='inputUsername']", "xpath:attributes"],
+        ["xpath=//section[@id='basic-information']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "fghjk67dsnj8"
+    }, {
+      "id": "a0c3380c-e63f-4b29-a3f4-5a80d9a3d1d4",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=inputUsername",
+      "targets": [
+        ["id=inputUsername", "id"],
+        ["name=username", "name"],
+        ["css=#inputUsername", "css:finder"],
+        ["xpath=//input[@id='inputUsername']", "xpath:attributes"],
+        ["xpath=//section[@id='basic-information']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f848f9af-12a7-4a56-829c-5912f74bb698",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=inputPassword",
+      "targets": [
+        ["id=inputPassword", "id"],
+        ["name=password", "name"],
+        ["css=#inputPassword", "css:finder"],
+        ["xpath=//input[@id='inputPassword']", "xpath:attributes"],
+        ["xpath=//section[@id='basic-information']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf5edee1-1adf-457f-b850-12f2ea5ee89f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=inputPassword",
+      "targets": [
+        ["id=inputPassword", "id"],
+        ["name=password", "name"],
+        ["css=#inputPassword", "css:finder"],
+        ["xpath=//input[@id='inputPassword']", "xpath:attributes"],
+        ["xpath=//section[@id='basic-information']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0fa6fe1-5d85-43f6-afd8-574336a5c0c2",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputPassword",
+      "targets": [
+        ["id=inputPassword", "id"],
+        ["name=password", "name"],
+        ["css=#inputPassword", "css:finder"],
+        ["xpath=//input[@id='inputPassword']", "xpath:attributes"],
+        ["xpath=//section[@id='basic-information']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "password57364546"
+    }, {
+      "id": "10db250e-5083-45a6-a875-f32a6c5ca855",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='entrustmentEnquiry']/section[2]/div/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "307baff0-9fdf-4594-bfe1-5c59d3283da9",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//section[@id='basic-information']/div/div/div", "xpath:idRelative"],
+        ["xpath=//section/div/div/div", "xpath:position"]
+      ],
+      "value": "This username and password combination does not exist."
+    }, {
+      "id": "757c25f2-eb18-4aa6-bb2e-0e39059af1bd",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "97cb0a2a-80e1-4bef-9c70-5c70e1abae4d",
+    "name": "Verify a form for editing user information on the \"Edit Profile\" page",
+    "commands": [{
+      "id": "cc62f712-62ff-4840-af0c-db3a5b8db8a7",
+      "comment": "",
+      "command": "open",
+      "target": "https://homerestate1.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fa993edd-7608-4c9b-b74b-b4029c56819e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1055x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6ab60b34-ebe7-472c-afb5-9d5f78bb7e5e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//div[@id='navbarPrimary']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/users/login')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a36f052-8234-4f4c-8c0e-eb17416738bb",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputUsername",
+      "targets": [
+        ["id=inputUsername", "id"],
+        ["name=username", "name"],
+        ["css=#inputUsername", "css:finder"],
+        ["xpath=//input[@id='inputUsername']", "xpath:attributes"],
+        ["xpath=//section[@id='basic-information']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da2b2af5-073f-4ea4-a477-7019d1af07d2",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=inputUsername",
+      "targets": [],
+      "value": "mihaelamihaylova"
+    }, {
+      "id": "1e4b5107-5dee-4be7-887b-81612013ab81",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputUsername",
+      "targets": [
+        ["id=inputUsername", "id"],
+        ["name=username", "name"],
+        ["css=#inputUsername", "css:finder"],
+        ["xpath=//input[@id='inputUsername']", "xpath:attributes"],
+        ["xpath=//section[@id='basic-information']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "mihaelamihaylova"
+    }, {
+      "id": "60fbd26a-218d-4af9-800a-edbedd3b5a5f",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=inputPassword",
+      "targets": [],
+      "value": "Mihaela12346"
+    }, {
+      "id": "681bafdd-5d69-4849-a432-7b63fc2e4a5a",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputPassword",
+      "targets": [
+        ["id=inputPassword", "id"],
+        ["name=password", "name"],
+        ["css=#inputPassword", "css:finder"],
+        ["xpath=//input[@id='inputPassword']", "xpath:attributes"],
+        ["xpath=//section[@id='basic-information']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Mihaela12346"
+    }, {
+      "id": "ca33d3e2-092a-4906-9302-1362661d9bc0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='entrustmentEnquiry']/section[2]/div/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b23f28b-0c51-4d8a-a8d3-6da5d3ab0182",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Profile",
+      "targets": [
+        ["linkText=Profile", "linkText"],
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Profile')]", "xpath:link"],
+        ["xpath=//div[@id='navbarPrimary']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/users/edit')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Profile')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f2f8714-4709-402f-b4c7-ed9f72e21ff4",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=inputUsername",
+      "targets": [
+        ["id=inputUsername", "id"],
+        ["css=#inputUsername", "css:finder"],
+        ["xpath=//input[@id='inputUsername']", "xpath:attributes"],
+        ["xpath=//section[@id='basic-information']/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4adbad7-4424-4918-96f4-967613934201",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=inputFullName",
+      "targets": [
+        ["id=inputFullName", "id"],
+        ["css=#inputFullName", "css:finder"],
+        ["xpath=//input[@id='inputFullName']", "xpath:attributes"],
+        ["xpath=//section[@id='basic-information']/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div/div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be9a25c5-84a8-45c9-bc42-a32c74f005a1",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=inputEmail",
+      "targets": [
+        ["id=inputEmail", "id"],
+        ["css=#inputEmail", "css:finder"],
+        ["xpath=//input[@id='inputEmail']", "xpath:attributes"],
+        ["xpath=//section[@id='basic-information']/div/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div/div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "46f633aa-d64e-4b9c-b9de-490936563ed7",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=inputPassword",
+      "targets": [
+        ["id=inputPassword", "id"],
+        ["name=password", "name"],
+        ["css=#inputPassword", "css:finder"],
+        ["xpath=//input[@id='inputPassword']", "xpath:attributes"],
+        ["xpath=//section[@id='basic-information']/div/div[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1ed9a96-95a5-4200-8ecc-512ede689834",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=inputConfirmPassword",
+      "targets": [
+        ["id=inputConfirmPassword", "id"],
+        ["name=confirmPassword", "name"],
+        ["css=#inputConfirmPassword", "css:finder"],
+        ["xpath=//input[@id='inputConfirmPassword']", "xpath:attributes"],
+        ["xpath=//section[@id='basic-information']/div/div[5]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1ac1e51-ac54-4528-a6db-8c502e6d46d0",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=btnSubmit",
+      "targets": [
+        ["id=btnSubmit", "id"],
+        ["name=button", "name"],
+        ["css=#btnSubmit", "css:finder"],
+        ["xpath=//button[@id='btnSubmit']", "xpath:attributes"],
+        ["xpath=//section[@id='submit-form']/form/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Change')]", "xpath:innerText"]
+      ],
+      "value": "Change"
+    }, {
+      "id": "f0414209-5940-4767-bb1f-212861f1ca06",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(2)",
+      "targets": [
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarPrimary']/ul/li[9]/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a7cc506-84da-4f95-8c1f-3e90f530a7ae",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8b7e6159-5b23-434a-84c5-74d61900d682",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://homerestate1.herokuapp.com/"],
+  "plugins": []
+}
